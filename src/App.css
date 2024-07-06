@@ -1,0 +1,89 @@
+body {
+  color: black;
+  background-color: rgb(180, 230, 209) !important;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Danfo';
+  margin: 0;
+}
+
+.app-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.emoji-container {
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.emoji {
+  font-size: 2rem;
+  animation: float 5s infinite;
+}
+
+.emoji-left {
+  position: fixed;
+  left: 10px;
+}
+
+.emoji-right {
+  position: fixed;
+  right: 10px;
+}
+
+.emoji:nth-child(1) { top: 5%; animation-delay: 0s; }
+.emoji:nth-child(2) { top: 15%; animation-delay: 0.5s; }
+.emoji:nth-child(3) { top: 25%; animation-delay: 1s; }
+.emoji:nth-child(4) { top: 35%; animation-delay: 1.5s; }
+.emoji:nth-child(5) { top: 45%; animation-delay: 2s; }
+.emoji:nth-child(6) { top: 55%; animation-delay: 2.5s; }
+.emoji:nth-child(7) { top: 65%; animation-delay: 3s; }
+.emoji:nth-child(8) { top: 75%; animation-delay: 3.5s; }
+.emoji:nth-child(9) { top: 85%; animation-delay: 4s; }
+.emoji:nth-child(10) { top: 95%; animation-delay: 4.5s; }
+.emoji:nth-child(11) { top: 5%; animation-delay: 5s; }
+.emoji:nth-child(12) { top: 15%; animation-delay: 5.5s; }
+.emoji:nth-child(13) { top: 25%; animation-delay: 6s; }
+.emoji:nth-child(14) { top: 35%; animation-delay: 6.5s; }
+.emoji:nth-child(15) { top: 45%; animation-delay: 7s; }
+.emoji:nth-child(16) { top: 55%; animation-delay: 7.5s; }
+.emoji:nth-child(17) { top: 65%; animation-delay: 8s; }
+.emoji:nth-child(18) { top: 75%; animation-delay: 8.5s; }
+.emoji:nth-child(19) { top: 85%; animation-delay: 9s; }
+.emoji:nth-child(20) { top: 95%; animation-delay: 9.5s; }
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 992px) {
+  .container-fluid {
+    max-width: 1024px; /* Adjust this value as needed */
+  }
+}

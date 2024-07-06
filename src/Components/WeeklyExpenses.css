@@ -1,0 +1,42 @@
+.btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent !important; /* Use !important to ensure it overrides other rules */
+    color: black !important;
+    border: .5rem solid black !important;
+    cursor: pointer;
+    border-radius: 0 !important;
+  }
+
+  .add-button {
+    background-color: transparent !important; /* Use !important to ensure it overrides other rules */
+    color: black !important;
+    border: .3rem solid black !important;
+    cursor: pointer;
+    border-radius: 0 !important;
+  }
+  .table-bordered {
+    border: 3px solid black;
+  }
+  
+  .table-bordered th,
+  .table-bordered td {
+    border: 3px solid black;
+    background-color: rgb(180, 230, 209);/* Set the background color to dark green */
+    color: black /* Set text color to white for better contrast */
+  }
+  
+  .transparent-button {
+    background-color: transparent;
+    border: px solid black;
+    color: black;
+  }
+  
+  .custom-form-control {
+    border: .2rem solid black; /* Set the border to black */
+    border-radius: 0;
+    background-color: rgb(180, 230, 209);
+  }
+  
